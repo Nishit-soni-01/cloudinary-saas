@@ -39,3 +39,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/lib/generated/prisma
+
+
+# Local environment overrides
+.env
+.env.*
+!.env.example
+
+# Local development files
+.vercel
+*.log
+
+# Local AI development configurations
+.agents/
+.claude/
+.windsurf/
