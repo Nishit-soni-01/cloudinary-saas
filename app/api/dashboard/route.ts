@@ -15,7 +15,7 @@ export async function GET() {
       );
     }
 
-    // Calculate the date range for the last 7 days.
+    
     const now = new Date();
     const sevenDaysAgo = new Date(now);
     sevenDaysAgo.setUTCDate(sevenDaysAgo.getUTCDate() - 6);
