@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
   let uploadedPublicId: string | null = null;
 
   try {
-    // 1. Authenticate user
+   
     const { userId } = await auth();
 
     if (!userId) {
