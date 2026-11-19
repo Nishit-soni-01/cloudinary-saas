@@ -12,7 +12,7 @@ cloudinary.config({
 
 export async function DELETE(request: NextRequest) {
   try {
-    // Authenticate the user
+    
     const { userId } = await auth();
 
     if (!userId) {
