@@ -21,7 +21,7 @@ export async function GET() {
     sevenDaysAgo.setUTCDate(sevenDaysAgo.getUTCDate() - 6);
     sevenDaysAgo.setUTCHours(0, 0, 0, 0);
 
-    // Fetch all dashboard information in parallel.
+    
     const [
       imageCount,
       videoCount,
