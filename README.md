@@ -274,8 +274,9 @@ The project demonstrates practical implementation of full-stack web development,
 
 **Nishit Soni**
 
-- GitHub: https://github.com/YOUR_USERNAME
-- LinkedIn: https://www.linkedin.com/in/YOUR_PROFILE/
+- GitHub: https://github.com/Nishit-soni-01/cloudinary-saas
+- Application link : https://cloudinary-saas-teal.vercel.app/
+- LinkedIn: https://www.linkedin.com/in/nishit-soni-in/
 
 ---
 
