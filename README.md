@@ -8,6 +8,12 @@ The platform combines cloud-based media storage with powerful processing tools, 
 
 ---
 
+<img width="1896" height="872" alt="image" src="https://github.com/user-attachments/assets/b2ebb7cc-84ef-4641-ba3c-2dab433b427f" />
+
+<img width="1910" height="881" alt="image" src="https://github.com/user-attachments/assets/27d842ba-d5ad-42f5-816b-f2db05f2008e" />
+
+
+
 ## ✨ Features
 
 ### 🔐 Authentication
@@ -53,6 +59,44 @@ The platform combines cloud-based media storage with powerful processing tools, 
 - Responsive layouts for different screen sizes.
 
 ---
+
+
+## 📸 Project Screenshots
+
+Explore the interface and features of Cloudinary Studio through the screenshots below.
+
+### 1. Dashboard
+<img width="1907" height="862" alt="image" src="https://github.com/user-attachments/assets/5a02474a-eb8f-4fa2-8d3f-c2ad3cf3ccb2" />
+
+<img width="1911" height="877" alt="image" src="https://github.com/user-attachments/assets/f5cbdd15-cf83-4387-87f6-f07d97224b19" />
+
+<img width="1911" height="871" alt="image" src="https://github.com/user-attachments/assets/cf1be20d-f533-4305-b15b-f8e7f20b14a6" />
+
+<img width="1917" height="878" alt="image" src="https://github.com/user-attachments/assets/2d64a8a5-87d8-4dc9-bdef-dbe27e04eee1" />
+
+
+
+
+
+### 2. Tools Workspace
+<!-- Add your tools page screenshot here -->
+![Tools Workspace](./screenshots/tools.png)
+
+### 3. Media Library
+<!-- Add your media library screenshot here -->
+![Media Library](./screenshots/media-library.png)
+
+### 4. Image Studio
+<!-- Add your image studio screenshot here -->
+![Image Studio](./screenshots/image-studio.png)
+
+### 5. Video Studio
+<!-- Add your video studio screenshot here -->
+![Video Studio](./screenshots/video-studio.png)
+
+### 6. Background Remover
+<!-- Add your background remover screenshot here -->
+![Background Remover](./screenshots/background-remover.png)
 
 ## 🛠️ Tech Stack
 
