@@ -79,20 +79,22 @@ Explore the interface and features of Cloudinary Studio through the screenshots 
 
 
 ### 2. Tools Workspace
-<!-- Add your tools page screenshot here -->
-![Tools Workspace](./screenshots/tools.png)
+<img width="1911" height="877" alt="image" src="https://github.com/user-attachments/assets/b26e0461-9afe-4dc9-ae93-ce90d189aff1" />
+
 
 ### 3. Media Library
-<!-- Add your media library screenshot here -->
-![Media Library](./screenshots/media-library.png)
+<img width="1915" height="872" alt="image" src="https://github.com/user-attachments/assets/e046324b-776f-41a1-adcd-80db8895d638" />
+
 
 ### 4. Image Studio
-<!-- Add your image studio screenshot here -->
-![Image Studio](./screenshots/image-studio.png)
+<img width="1908" height="882" alt="image" src="https://github.com/user-attachments/assets/aab1723a-e623-43fd-918a-f68f6ef8b9b5" />
+<img width="1917" height="877" alt="image" src="https://github.com/user-attachments/assets/9dc9f253-5fc8-4558-8136-691c96b2524a" />
+
+
 
 ### 5. Video Studio
-<!-- Add your video studio screenshot here -->
-![Video Studio](./screenshots/video-studio.png)
+<img width="1917" height="878" alt="image" src="https://github.com/user-attachments/assets/d06ecfa7-eb5b-40d3-ba3c-276b3bc17484" />
+
 
 ### 6. Background Remover
 <!-- Add your background remover screenshot here -->
