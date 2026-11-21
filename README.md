@@ -94,11 +94,13 @@ Explore the interface and features of Cloudinary Studio through the screenshots 
 
 ### 5. Video Studio
 <img width="1917" height="878" alt="image" src="https://github.com/user-attachments/assets/d06ecfa7-eb5b-40d3-ba3c-276b3bc17484" />
+<img width="1905" height="872" alt="image" src="https://github.com/user-attachments/assets/2b575fd3-3c51-4770-a92e-7dd9eea806fd" />
+
 
 
 ### 6. Background Remover
-<!-- Add your background remover screenshot here -->
-![Background Remover](./screenshots/background-remover.png)
+<img width="1917" height="872" alt="image" src="https://github.com/user-attachments/assets/0b5606e2-1370-4817-a17e-b0a1f00c3331" />
+
 
 ## 🛠️ Tech Stack
 
