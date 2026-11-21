@@ -1,36 +1,284 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ☁️ Cloudinary Studio
 
-## Getting Started
+**A modern media management and processing platform built with Next.js, Cloudinary, Prisma, and PostgreSQL.**
 
-First, run the development server:
+Cloudinary Studio is a web-based creative workspace that helps users upload, organize, optimize, and transform their images and videos through a clean and intuitive dashboard.
+
+The platform combines cloud-based media storage with powerful processing tools, making it easier to manage digital assets in one place.
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication
+- Secure user authentication using Clerk.
+- Protected dashboard experience.
+- User account management.
+
+### 📁 Media Library
+- Upload and manage media files.
+- Organize images and videos in one workspace.
+- View uploaded media in a dedicated library.
+- Filter media by type: All Media, Images, and Videos.
+- Preview media assets.
+
+### 🖼️ Image Studio
+- Resize images.
+- Compress images to optimize file sizes.
+- Convert images into optimized formats.
+- Maintain image quality while processing.
+
+### 🎬 Video Studio
+- Select videos from your media library.
+- Preview selected videos.
+- Resize videos using 720p or custom dimensions.
+- Adjust compression quality.
+- Convert videos to web-friendly MP4 format using H.264.
+- Preview and download processed videos.
+
+### ✂️ Background Remover
+- Automatically remove image backgrounds.
+- Generate transparent PNG images.
+- Download processed results.
+
+### 🧰 Tools Dashboard
+- Dedicated tools workspace.
+- Easy navigation between image and video processing tools.
+- Responsive dashboard interface.
+
+### 📱 Responsive UI
+- Modern dark-themed interface.
+- Desktop sidebar navigation.
+- Mobile navigation menu.
+- Responsive layouts for different screen sizes.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js | React framework and application routing |
+| TypeScript | Type-safe development |
+| React | User interface |
+| Tailwind CSS | Styling and responsive design |
+| Clerk | Authentication and user management |
+| Cloudinary | Cloud media storage and processing |
+| Prisma ORM | Database access and management |
+| PostgreSQL | Relational database |
+| Lucide React | Icons |
+
+---
+
+## 📂 Project Structure
+
+```text
+cloudinary-studio/
+│
+├── app/
+│   ├── api/
+│   │   ├── image-upload/
+│   │   │   └── route.ts
+│   │   └── media/
+│   │
+│   ├── home/
+│   │   ├── page.tsx
+│   │   ├── tools/
+│   │   ├── media/
+│   │   ├── image-studio/
+│   │   ├── video-studio/
+│   │   └── background-remover/
+│   │
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── dashboard-sidebar.tsx
+│   ├── mobile-dashboard-nav.tsx
+│   ├── media-library.tsx
+│   └── ...
+│
+├── lib/
+│   └── prisma.ts
+│
+├── prisma/
+│   └── schema.prisma
+│
+├── public/
+│
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+*Note: This is a representative structure. Your actual project may contain additional components, API routes, and utility files.*
+
+---
+
+## ⚙️ Getting Started
+
+Follow these instructions to run Cloudinary Studio locally.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+```
+
+Navigate into the project:
+
+```bash
+cd cloudinary-studio
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file in the root directory:
+
+```env
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+
+# PostgreSQL Database
+DATABASE_URL=
+
+# Cloudinary Configuration
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+```
+
+Replace the empty values with your actual credentials.
+
+**Where to get the credentials:**
+
+- **Clerk:** https://clerk.com/
+- **Cloudinary:** https://cloudinary.com/
+- **PostgreSQL:** Use your PostgreSQL database provider or local database.
+
+Keep your secret keys private. Never commit your `.env` file to GitHub.
+
+### 4. Configure the database
+
+Generate the Prisma Client:
+
+```bash
+npx prisma generate
+```
+
+For an initial database setup using your Prisma schema:
+
+```bash
+npx prisma db push
+```
+
+If your project uses Prisma migrations instead, use:
+
+```bash
+npx prisma migrate dev
+```
+
+### 5. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🗄️ Database
 
-To learn more about Next.js, take a look at the following resources:
+Cloudinary Studio uses PostgreSQL with Prisma ORM.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The database includes media models for managing uploaded assets:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Image** – Stores image-related media records.
+- **Video** – Stores video-related media records.
 
-## Deploy on Vercel
+Prisma provides a structured and type-safe way to interact with the database.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ☁️ Cloudinary Integration
+
+Cloudinary is used for cloud-based image storage and media management.
+
+The application connects to Cloudinary through server-side API requests using environment-based credentials.
+
+The image upload API handles:
+
+1. Receiving uploaded image files.
+2. Authenticating requests using Cloudinary credentials.
+3. Uploading files to the Cloudinary cloud.
+4. Saving media information in PostgreSQL through Prisma.
+5. Handling upload and database errors.
+
+Cloudinary credentials remain on the server and should never be exposed to the client.
+
+---
+
+## 🚀 Deployment
+
+The application can be deployed using platforms that support Next.js.
+
+A typical deployment workflow:
+
+1. Push the project to GitHub.
+2. Import the repository into Vercel.
+3. Configure the required environment variables.
+4. Connect your production PostgreSQL database.
+5. Generate and apply Prisma database changes.
+6. Deploy the application.
+
+**Deployment platform:** Vercel (recommended)
+
+https://vercel.com/
+
+Make sure all required environment variables are configured in your deployment platform before running the application.
+
+---
+
+## 🔒 Security
+
+- Authentication handled through Clerk.
+- Cloudinary API secrets stored in environment variables.
+- Database access managed through Prisma.
+- `.env` files excluded from version control.
+- Server-side handling of sensitive upload credentials.
+
+---
+
+## 🎯 Project Objective
+
+The goal of Cloudinary Studio is to build a centralized media workspace where users can store, manage, optimize, and transform their digital assets without relying on multiple disconnected tools.
+
+The project demonstrates practical implementation of full-stack web development, authentication, database integration, cloud storage, API development, and media processing.
+
+---
+
+## 👨‍💻 Author
+
+**Nishit Soni**
+
+- GitHub: https://github.com/YOUR_USERNAME
+- LinkedIn: https://www.linkedin.com/in/YOUR_PROFILE/
+
+---
+
+## 📄 License
+
+This project is available under the MIT License. Add a `LICENSE` file to the repository if you intend to distribute it under that license.
