@@ -6,7 +6,7 @@ export async function GET() {
   await connection();
 
   try {
-    // 1. Authenticate user
+   
     const { userId } = await auth();
 
     if (!userId) {
