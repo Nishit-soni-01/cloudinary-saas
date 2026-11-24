@@ -32,7 +32,7 @@ export async function GET() {
       weeklyImages,
       weeklyVideos,
     ] = await Promise.all([
-      // Total image count
+      
       prisma.image.count({
         where: { userId },
       }),
