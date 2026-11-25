@@ -37,7 +37,7 @@ export async function GET() {
         where: { userId },
       }),
 
-      // Total video count
+      
       prisma.video.count({
         where: { userId },
       }),
