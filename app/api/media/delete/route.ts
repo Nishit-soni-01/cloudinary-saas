@@ -22,7 +22,7 @@ export async function DELETE(request: NextRequest) {
       );
     }
 
-    // Validate request
+  
     const body = await request.json().catch(() => null);
     const assetId = body?.id;
 
