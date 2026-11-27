@@ -33,7 +33,7 @@ export async function DELETE(request: NextRequest) {
       );
     }
 
-    // Find the asset belonging to this user
+   
     const [image, video] = await Promise.all([
       prisma.image.findFirst({
         where: { id: assetId, userId },
