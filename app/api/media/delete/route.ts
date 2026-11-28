@@ -60,7 +60,7 @@ export async function DELETE(request: NextRequest) {
       );
     }
 
-    // Delete the Cloudinary asset
+    
     const cloudinaryResult = await cloudinary.uploader.destroy(
       asset.publicId,
       { resource_type: resourceType }
